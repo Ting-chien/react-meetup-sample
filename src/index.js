@@ -9,16 +9,19 @@ import FavoritesPage from './pages/Favorites';
 import NewMeetupPage from './pages/NewMeetup';
 
 // Components
+import Layout from './components/Layout';
 import MainNavigation from './components/MainNavigation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
       <MainNavigation />
-      <Routes>
-        <Route path='/' element={<AllMeetupPage />} />
-        <Route path='/new' element={<NewMeetupPage />} />
-        <Route path='/favorites' element={<FavoritesPage />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path='/' element={<AllMeetupPage />} />
+          <Route path='/new' element={<NewMeetupPage />} />
+          <Route path='/favorites' element={<FavoritesPage />} />
+        </Routes>
+      </Layout>
   </BrowserRouter>
 );
