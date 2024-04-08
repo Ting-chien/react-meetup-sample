@@ -1,0 +1,18 @@
+{
+  "meetups": [
+    {
+      "id": "d751",
+      "title": "Statue Of Liberty National Monument",
+      "image": "https://unsplash.com/photos/statue-of-liberty-new-york-l0ySsmZ6ZG4",
+      "address": "Statue of Liberty National Monument, New York, NY, USA",
+      "description": "An image took in New York!"
+    },
+    {
+      "id": "1f65",
+      "title": "Statue Of Liberty National Monument",
+      "image": "https://unsplash.com/photos/statue-of-liberty-new-york-l0ySsmZ6ZG4",
+      "address": "Statue of Liberty National Monument, New York, NY, USA",
+      "description": "An image took in New York!"
+    }
+  ]
+}
