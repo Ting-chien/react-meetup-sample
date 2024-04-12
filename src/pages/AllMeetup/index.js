@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import MeetupList from "../../components/MeetupList";
 
@@ -8,13 +8,15 @@ const AllMeetupPage = () => {
     const [isLoading, setIsLoading] = useState(true)
     const [meetups, setMeetups] = useState([])
     // Get all meetups
-    fetch("http://localhost:3000/meetups")
-    .then((res) => {
-        return res.json()
-    }).then((data) => {
-        setIsLoading(false)
-        setMeetups(data)
-    })
+    useEffect(() => {
+        fetch("http://localhost:3000/meetups")
+        .then((res) => {
+            return res.json()
+        }).then((data) => {
+            setIsLoading(false)
+            setMeetups(data)
+        })
+    }, [])
 
     return <div>
         <h1>All Meetup Page</h1>
