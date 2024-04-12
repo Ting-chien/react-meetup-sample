@@ -1,7 +1,11 @@
+import { useNavigate } from 'react-router-dom';
+
 import NewMeetupForm from "../../components/NewMeetupForm"
 
 
 const NewMeetupPage = () => {
+
+    const navigate = useNavigate()
 
     // Add new meetup by calling api
     function addNewMeetupHandler(meetup) {
@@ -13,7 +17,9 @@ const NewMeetupPage = () => {
                 },
                 body: JSON.stringify(meetup)
             }
-        )
+        ).then(() => {
+            navigate("/", { replace: true })
+        })
     }
 
     return <div>

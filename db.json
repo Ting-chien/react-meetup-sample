@@ -2,17 +2,24 @@
   "meetups": [
     {
       "id": "d751",
-      "title": "Statue Of Liberty National Monument",
-      "image": "https://unsplash.com/photos/statue-of-liberty-new-york-l0ySsmZ6ZG4",
-      "address": "Statue of Liberty National Monument, New York, NY, USA",
-      "description": "An image took in New York!"
+      "title": "Canal in Venice",
+      "image": "https://images.unsplash.com/photo-1485415009267-44562f07e23f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "address": "Venice, Italy",
+      "description": "An image took in Italy!"
     },
     {
       "id": "1f65",
       "title": "Statue Of Liberty National Monument",
-      "image": "https://unsplash.com/photos/statue-of-liberty-new-york-l0ySsmZ6ZG4",
+      "image": "https://images.unsplash.com/photo-1590858148182-ad4bdfa495fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "address": "Statue of Liberty National Monument, New York, NY, USA",
       "description": "An image took in New York!"
+    },
+    {
+      "id": "ab18",
+      "title": "CHICAGO BEAN THING",
+      "image": "https://images.unsplash.com/photo-1579463870606-64fcb6423feb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "address": "Chicago, IL, USA",
+      "description": "The world renowned CHICAGO BEAN THING [ IG: @clay.banks ]"
     }
   ]
 }
