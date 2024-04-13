@@ -11,17 +11,20 @@ import NewMeetupPage from './pages/NewMeetup';
 // Components
 import Layout from './components/Layout';
 import MainNavigation from './components/MainNavigation';
+import { FavoritesContextProvider } from './store/favorites-context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-      <MainNavigation />
-      <Layout>
-        <Routes>
-          <Route path='/' element={<AllMeetupPage />} />
-          <Route path='/new' element={<NewMeetupPage />} />
-          <Route path='/favorites' element={<FavoritesPage />} />
-        </Routes>
-      </Layout>
-  </BrowserRouter>
+  <FavoritesContextProvider>
+    <BrowserRouter>
+        <MainNavigation />
+        <Layout>
+          <Routes>
+            <Route path='/' element={<AllMeetupPage />} />
+            <Route path='/new' element={<NewMeetupPage />} />
+            <Route path='/favorites' element={<FavoritesPage />} />
+          </Routes>
+        </Layout>
+    </BrowserRouter>
+  </FavoritesContextProvider>
 );
